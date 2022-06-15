@@ -68,7 +68,32 @@ img
 	&:hover
 		background-color: $accent
 		color: #fff
+
+.btn
+	color: #fff
+	background-color: $accent
+	padding: 14px 40px
+	transition: all .4s ease
+	text-decoration: none
+	border-radius: 24px
+	box-shadow: 0 3px 6px rgba(0, 0, 0, .16)
+	&:hover
+		background-color: #fff
+		color: #111
+	&.btn_white
+		background-color: #fff
+		color: #111
+		&:hover
+			color: #fff
+			background-color: $accent
 /*btns*/
+
+
+#top_banner
+	background-size: cover
+	background-repeat: no-repeat
+	background-position: center
+	
 
 #header
 	padding-top: 24px
@@ -98,3 +123,50 @@ img
 						transition: color .4s easy
 						&:hover
 							color: $accent
+
+.notif
+	background-color: $light_accent
+	border-radius: 20px
+	padding: 10px 25px
+	display: flex
+	align-items: center
+	max-width: 256px
+	img
+		width: 16px
+		height: auto
+		margin-right: 7px
+	p
+		color: $accent
+	a
+		transition: all .4s ease
+		text-decoration: none
+		border-bottom: 1px solid $accent
+		color: $accent
+		&:hover
+			color: darken($accent,10%)
+			border-color:	darken($accent,10%)
+
+.main_banner
+	//padding: 240px 0 380px
+	padding: 150px 0 260px
+	.mb_info
+		>h1
+			color: #160637
+			font-size: 50px
+			font-weight: 900
+			line-height: 1.2
+			max-width: 430px
+			margin-top: 10px
+		>.descr
+			color: #8989A2
+			margin: 14px 0 44px
+			font-size: 18px
+		>.btns
+			display: flex
+			align-items: center
+			>.btn_white
+				margin-left: 16px
+
+
+
+

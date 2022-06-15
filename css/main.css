@@ -67,7 +67,32 @@ img {
     background-color: #722ED1;
     color: #fff; }
 
+.btn {
+  color: #fff;
+  background-color: #722ED1;
+  padding: 14px 40px;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  text-decoration: none;
+  border-radius: 24px;
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16); }
+  .btn:hover {
+    background-color: #fff;
+    color: #111; }
+  .btn.btn_white {
+    background-color: #fff;
+    color: #111; }
+    .btn.btn_white:hover {
+      color: #fff;
+      background-color: #722ED1; }
+
 /*btns */
+#top_banner {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
+
 #header {
   padding-top: 24px; }
   #header .inner_header {
@@ -105,3 +130,53 @@ img {
             transition: color 0.4s easy; }
             #header .inner_header .ride_side_header .mnu_top > li > a:hover {
               color: #722ED1; }
+
+.notif {
+  background-color: #F9F0FF;
+  border-radius: 20px;
+  padding: 10px 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 256px; }
+  .notif img {
+    width: 16px;
+    height: auto;
+    margin-right: 7px; }
+  .notif p {
+    color: #722ED1; }
+  .notif a {
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    text-decoration: none;
+    border-bottom: 1px solid #722ED1;
+    color: #722ED1; }
+    .notif a:hover {
+      color: #5b25a7;
+      border-color: #5b25a7; }
+
+.main_banner {
+  padding: 150px 0 260px; }
+  .main_banner .mb_info > h1 {
+    color: #160637;
+    font-size: 50px;
+    font-weight: 900;
+    line-height: 1.2;
+    max-width: 430px;
+    margin-top: 10px; }
+  .main_banner .mb_info > .descr {
+    color: #8989A2;
+    margin: 14px 0 44px;
+    font-size: 18px; }
+  .main_banner .mb_info > .btns {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .main_banner .mb_info > .btns > .btn_white {
+      margin-left: 16px; }

@@ -114,15 +114,55 @@ img
 				list-style-type: none
 				>li
 					display: inline-block
-					margin-right: 40px
-					>a
+					position: relative
+					a
 						display:block
 						text-decoration: none
 						font-weight: 500
 						color: #000
-						transition: color .4s easy
+						transition: color .4s ease
+						padding-right: 40px
+						padding: 12px 40px 12px 0
 						&:hover
 							color: $accent
+					>.sub_menu
+						
+						position: absolute
+						top: 35px
+						background-color: #fff
+						box-shadow: 0 3px 6px rgba(0, 0, 0, .16)
+						z-index: 10
+						border-radius: 5px
+						padding: 5px 
+						animation: .6s opac
+						display: none
+						>li
+							display:block
+							list-style-type: none
+							>a
+								padding: 4px 10px
+								font-size: 14px
+					&.has_sub_menu
+						&:hover>.sub_menu
+							display: block
+						&:after
+							content: ''
+							display: block
+							width: 8px
+							height: 4px
+							background-image: url('/img/arrow_down.svg')
+							background-size: cover
+							background-repeat: no-repeat
+							background-position: center
+							position: absolute
+							top: 12px
+							right: 25px
+							
+@keyframes opac 
+	from 
+		opacity: 0
+	to
+		opacity: 1
 
 .notif
 	background-color: $light_accent

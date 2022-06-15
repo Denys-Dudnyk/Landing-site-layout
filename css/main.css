@@ -121,16 +121,60 @@ img {
         list-style-type: none; }
         #header .inner_header .ride_side_header .mnu_top > li {
           display: inline-block;
-          margin-right: 40px; }
-          #header .inner_header .ride_side_header .mnu_top > li > a {
+          position: relative; }
+          #header .inner_header .ride_side_header .mnu_top > li a {
             text-decoration: none;
             font-weight: 500;
             color: #000;
-            -webkit-transition: color 0.4s easy;
-            transition: color 0.4s easy; }
-            #header .inner_header .ride_side_header .mnu_top > li > a:hover {
+            -webkit-transition: color 0.4s ease;
+            transition: color 0.4s ease;
+            padding-right: 40px;
+            padding: 12px 40px 12px 0; }
+            #header .inner_header .ride_side_header .mnu_top > li a:hover {
               color: #722ED1; }
+          #header .inner_header .ride_side_header .mnu_top > li > .sub_menu {
+            position: absolute;
+            top: 35px;
+            background-color: #fff;
+            -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+                    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+            z-index: 10;
+            border-radius: 5px;
+            padding: 5px;
+            -webkit-animation: 0.6s opac;
+                    animation: 0.6s opac;
+            display: none; }
+            #header .inner_header .ride_side_header .mnu_top > li > .sub_menu > li {
+              list-style-type: none; }
+              #header .inner_header .ride_side_header .mnu_top > li > .sub_menu > li > a {
+                padding: 4px 10px;
+                font-size: 14px; }
+          #header .inner_header .ride_side_header .mnu_top > li.has_sub_menu:hover > .sub_menu {
+            display: block; }
+          #header .inner_header .ride_side_header .mnu_top > li.has_sub_menu:after {
+            content: "";
+            display: block;
+            width: 8px;
+            height: 4px;
+            background-image: url("/img/arrow_down.svg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            position: absolute;
+            top: 12px;
+            right: 25px; }
 
+@-webkit-keyframes opac {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@keyframes opac {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
 .notif {
   background-color: #F9F0FF;
   border-radius: 20px;

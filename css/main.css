@@ -352,3 +352,25 @@ section.information .right_info {
                 filter: grayscale(0);
         -webkit-transform: scale(1.1);
                 transform: scale(1.1); }
+
+#pre_footer .pf_info {
+  /*>.img-responsive
+   * display: flex
+   * flex-wrap: wrap
+   * justify-content: space-between
+   * >img
+   * 	display: block
+   * 	margin: 0 auto
+   * 	width: 40%
+   * 	max-width: 146px */ }
+  #pre_footer .pf_info > h4 {
+    color: #160637;
+    font-weight: 900;
+    font-size: 38px;
+    text-align: center; }
+  #pre_footer .pf_info > .line_img {
+    display: block;
+    margin: 42px auto; }
+  #pre_footer .pf_info > .img-responsive {
+    display: block;
+    margin: 0 auto; }

@@ -284,3 +284,71 @@ section.information .right_info {
   section.information .right_info > .descr {
     color: #8989A2;
     font-size: 16px; }
+
+#reviews {
+  padding: 300px 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("/img/reviews/bg.svg"); }
+  #reviews .item_rev {
+    text-align: center;
+    display: none;
+    -webkit-animation: opac 0.8s;
+            animation: opac 0.8s; }
+    #reviews .item_rev.active {
+      display: block; }
+    #reviews .item_rev > .quotes {
+      color: #160637;
+      margin: 0 auto 16px;
+      font-size: 22px;
+      margin-bottom: 16px;
+      max-width: 660px;
+      height: 100px; }
+    #reviews .item_rev > img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%; }
+    #reviews .item_rev > .name {
+      margin-top: 16px; }
+    #reviews .item_rev > .name, #reviews .item_rev > .position {
+      color: #111;
+      font-weight: 900; }
+  #reviews .line {
+    height: 1px;
+    width: 100%;
+    background-color: #DEC9FA;
+    margin: 56px 0; }
+  #reviews .nav_rev {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    #reviews .nav_rev > div {
+      cursor: pointer;
+      width: 16%;
+      -webkit-filter: grayscale(1);
+              filter: grayscale(1);
+      -webkit-transition: all 0.4s ease;
+      transition: all 0.4s ease;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+      #reviews .nav_rev > div.active {
+        -webkit-filter: grayscale(0);
+                filter: grayscale(0);
+        -webkit-transform: scale(1.1);
+                transform: scale(1.1); }

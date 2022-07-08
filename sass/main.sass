@@ -426,3 +426,112 @@ section.information
 					color: $gray
 					>a
 						color: #1563ff
+
+#footer
+	background-color: #FBFCFF
+	padding: 60px 0 0
+	.row_flex
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		.col_footer_1
+			width: 20%
+		.col_footer_2
+			width: 55%
+		.col_footer_3
+			width: 16%
+	.logo_info
+		>a
+			width: 48px
+			height: 48px
+			display: block
+			>img
+				margin: 0 auto
+		>.descr
+			color: $dark_accent
+			font-size: 13px
+			margin: 16px 0
+			line-height: 1.65
+		>.social
+			list-style-type: none
+			>li
+				display: inline-block
+				margin-right: 16px
+				>a
+					display: flex
+					align-items: center
+					justify-content: center
+					width: 16px
+					height: 16px
+					transition: transform .4s ease
+					text-decoration: none
+					&:hover
+						transform: translateY(-8px)
+				&:last-child
+					margin-right: 0
+	.mnu_footer_wrapper
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		padding: 0 15px
+		>.mnu_footer
+			>ul
+				list-style-type: none
+				>li
+					display: block
+					>a
+						display: block
+						padding: 6px 0
+						text-decoration: none
+						color: $dark_accent
+						transition: color .4s ease
+						font-size: 13px
+						&:hover
+							color: $accent
+
+	b.heading
+		color: $dark_accent
+		margin-bottom: 8px
+		display: block
+		font-size: 18px
+		font-weight: 900
+	.news_letter
+		>b.heading
+			margin-bottom: 16px
+		>form
+			display: flex
+			align-items:center
+			background-color: #fff
+			position: relative
+			width: 100%
+			box-shadow: 0 5px 9px rgba(0,0,0,.05)
+			>input
+				display: block
+				border: none
+				outline: none
+				padding: 12px 40px 12px 16px
+				max-width: 100%
+				&::placeholder
+					color: &gray
+					font-size: 14px
+			>button
+				position: absolute
+				cursor: pointer
+				top: 6px
+				right: 12px
+				border: none
+				background-color: transparent
+				outline: none
+				display: flex
+				align-items:center
+				justify-content: center
+				width: 26px
+				height: 26px
+
+	.copyright
+		padding-bottom: 15px
+		color: $dark_accent
+		font-weight: 900
+		font-size: 16px
+		margin-top: 66px
+		text-align: center

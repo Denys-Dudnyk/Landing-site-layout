@@ -438,9 +438,10 @@ section.information .right_info {
         justify-content: center;
         width: 16px;
         height: 16px;
-        transition: transform 0.4s ease;
         text-decoration: none; }
-        #footer .logo_info > .social > li > a:hover {
+        #footer .logo_info > .social > li > a > img {
+          transition: transform 0.4s ease; }
+        #footer .logo_info > .social > li > a:hover > img {
           transform: translateY(-8px); }
       #footer .logo_info > .social > li:last-child {
         margin-right: 0; }

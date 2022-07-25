@@ -2,6 +2,9 @@ $(function() {
 
 	new WOW().init();
 
+	//var devip = require('dev-ip');
+	//devip();
+	//hamburger
 	$(".hamburger").click(function(){
 		$(this).toggleClass("is-active");
 
@@ -11,6 +14,7 @@ $(function() {
 			$('.mnu_top').slideUp(300);
 		}
 	});
+	//hamburger
 
 	/*reviews tabs*/
 

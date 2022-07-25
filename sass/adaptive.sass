@@ -107,7 +107,137 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
-	/**/
+	.hamburger
+		display: block
+	#header 
+		position: relative
+		padding-top: 14px
+		.inner_header	.ride_side_header	.mnu_top
+			display: none
+			position: absolute
+			left: 0
+			right: 0
+			top: 70px
+			width: 100%
+			box-shadow: 0 3px 6px rgba(0, 0, 0, .16)
+			background-color: #fff
+			padding: 10px 0
+			z-index: 11
+			>li
+				display: block
+				>a
+					padding: 5px 15px
+				>.sub_menu
+					display: block
+					position: relative
+					top: auto
+					box-shadow: none
+					border-radius: none
+					animation: none
+					padding-left: 15px			
+			
+
+
+	#header .inner_header .ride_side_header .mnu_top > li.has_sub_menu::after
+		display: none
+
+	#top_banner
+		background-color: #F5FAFF
+		background-image:	none !important
+		.main_banner
+			padding: 20px 0 50px
+
+	.notif
+		margin: 0 auto
+
+	.main_banner .mb_info
+		text-align: center
+		> h1
+			font-size: 30px
+
+	.main_banner .mb_info > .descr
+		font-size: 14px
+
+	.main_banner .mb_info > .btns
+		flex-wrap: wrap
+		>a
+			display: block
+			width: 100%
+		>.btn_white
+			margin: 0 auto
+			margin-top: 10px
+
+
+	#advantages .notif
+		font-size: 14px
+
+	section
+		padding: 40px 0
+
+
+	#advantages .heading_main
+		margin: 25px 0
+
+	section.information .right_info > h3, #pre_footer .pf_info > h4, #advantages .heading_main h2
+		font-size: 25px
+
+	#advantages .description
+		font-size: 13px
+
+	.row_adv > div
+		width: 100%
+		margin-bottom: 30px
+		&:last-child
+			margin-bottom: 0
+
+	/*section.information .right_info .notif
+		font-size: 14px*/
+
+	section.information .right_info > h3, #pre_footer .pf_info > h4, #advantages .heading_main h2
+		font-size: 24px
+	section.information .right_info > .descr
+		font-size: 15px
+
+	#reviews
+		background-color: #F5FAFF
+		background-image:	none !important
+		padding: 40px 0
+
+
+	#reviews .item_rev
+		>.quotes
+			font-size: 14px
+			margin-bottom: 20px
+		>img
+			width: 70px
+			height: 70px
+
+
+	#reviews .item_rev > .name, #reviews .item_rev > .position
+		font-size: 14px
+	#reviews .line
+		margin: 35px 0
+
+	#reviews .nav_rev	>	div
+		margin: 5px auto
+		width: 85px
+  	
+  	
+	#pre_footer .form_wrapper > form
+		transform: translateY(-15px)
+		width: 90%
+		padding: 36px 16px 24px
+		>h4
+			margin-bottom: 24px
+		>input
+			font-size: 13px
+			padding: 9px 17px
+		.or
+			margin: 8px auto 8px
+			
+	#pre_footer .form_wrapper > form > .footer_form > .line
+		margin: 18px 0
+
 
 
 /* Custom, iPhone Retina */

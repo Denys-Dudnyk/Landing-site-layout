@@ -4,7 +4,9 @@ $(function() {
 
 	//var devip = require('dev-ip');
 	//devip();
-	//hamburger
+
+	/*hamburger*/
+
 	$(".hamburger").click(function(){
 		$(this).toggleClass("is-active");
 
@@ -14,7 +16,8 @@ $(function() {
 			$('.mnu_top').slideUp(300);
 		}
 	});
-	//hamburger
+
+	/*hamburger*/
 
 	/*reviews tabs*/
 
@@ -28,5 +31,25 @@ $(function() {
 	});
 
 	/*reviews tabs*/
+
+	/*yakor*/
+
+	$('a.yakor').on('click', function (event){
+		var $anchor = $(this);
+		$('html, body').stop().animate({
+			scrollTop: $($anchor.attr('href')).offset().top-57
+		}, {
+			duration: 2000,
+			specialEasing: {
+				width: "Linear",
+				height: "easeInOutCubic"
+			}
+		});
+		event.preventDefault();
+	});
+
+
+
+	/*yakor*/
 
 });
